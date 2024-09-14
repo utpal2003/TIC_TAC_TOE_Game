@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000C66;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+@media only screen and (max-width: 400px) {
+    h1 {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .container {
+        margin-top: 0px;
+    }
+}
+
+.container {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1vmin;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    font-size: 8vmin;
+    font-weight: bold;
+    color: #F51720;
+    background-color:#D4F1F4 ;
+}
+
+#reset-btn {
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: #C3E0E5;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#reset-btn:hover {
+    background: greenyellow;
+}
+#new-game{
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: #1fe01f;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#new-game:hover{
+    background-color: rgb(250, 250, 114);
+}
+#winning-msg{
+    color: #ef4cd7;
+    font-size: 8vmin;
+}
+.hide{
+    display: none;
+}
